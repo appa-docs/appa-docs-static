@@ -1,0 +1,511 @@
+
+
+<!doctype html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Frequently Asked Questions (FAQ) &mdash; User Manuals 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/bizstyle.js"></script>
+    <link rel="top" title="User Manuals 0.0.1 documentation" href="Master.html" />
+    <link rel="next" title="Contact Us!" href="Contact Us.html" />
+    <link rel="prev" title="Tutorials" href="Tutorials.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="Contact Us.html" title="Contact Us!"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="Tutorials.html" title="Tutorials"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="Master.html">User Manuals 0.0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><a href="/api/api.html">API Documentation</h1>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="frequently-asked-questions-faq">
+<h1><strong>Frequently Asked Questions (FAQ)</strong><a class="headerlink" href="#frequently-asked-questions-faq" title="Permalink to this headline">¶</a></h1>
+<p>Answers to common questions are documented here! More in-depth instructions are also included here, such as adding custom variables,
+importing data, transmission related outages, etc.</p>
+<p>Contents:</p>
+<p><a class="reference internal" href="#acquiring-eia-data">Acquiring EIA Data</a></p>
+<ul class="simple">
+<li><a class="reference internal" href="#how-do-i-get-the-correct-eia-data">How do I get the correct EIA Data?</a></li>
+<li><a class="reference internal" href="#what-are-the-steps-sent-to-list-for-acquiring-eia-data">What are the Steps Sent to List for Acquiring EIA Data?</a></li>
+</ul>
+<p><a class="reference internal" href="#adding-custom-variables-and-equipment">Adding Custom Variables and Equipment</a></p>
+<ul class="simple">
+<li><a class="reference internal" href="#how-do-i-add-custom-variables-and-equipment-to-my-outage-form">How do I add Custom Variables and Equipment to my Outage Form?</a></li>
+</ul>
+<p><a class="reference internal" href="#annual-report-clarifications">Annual Report Clarifications</a></p>
+<ul class="simple">
+<li><a class="reference internal" href="#why-are-all-of-my-saidi-values-the-same-with-and-without-mes">Why are all of my SAIDI Values the same? (With and Without MEs)</a></li>
+<li><a class="reference internal" href="#what-does-med-and-los-stand-for">What does MED and LOS stand for?</a></li>
+</ul>
+<p><a class="reference internal" href="#appa-ieee-major-event-calculations">APPA IEEE Major Event Calculations</a></p>
+<ul class="simple">
+<li><a class="reference internal" href="#what-is-the-difference-in-ieee-and-appa-major-event-calculation">What is the Difference in IEEE and APPA Major Event Calculation?</a></li>
+<li><a class="reference internal" href="#how-do-i-classify-and-report-major-events">How do I classify and report Major Events?</a></li>
+<li><a class="reference internal" href="#do-storms-e-g-hurricanes-tornadoes-etc-count-as-meds-do-generation-and-transmission-disturbances-count-as-los">Do storms (e.g. hurricanes, tornadoes, etc.) count as MEDs? Do Generation and Transmission disturbances count as LOS?</a></li>
+<li><a class="reference internal" href="#previously-we-were-able-to-see-our-timed-threshold-saidi-value-has-something-changed">Previously we were able to see our Timed Threshold SAIDI Value&#8211;has something changed?</a></li>
+</ul>
+<p><a class="reference internal" href="#calculate-duration-of-outages-in-exported-spreadsheet">Calculate Duration of Outages in Exported Spreadsheet</a></p>
+<ul class="simple">
+<li><a class="reference internal" href="#what-is-the-equation-for-calculating-duration">What is the Equation for Calculating Duration?</a></li>
+</ul>
+<p><a class="reference internal" href="#causes-list">Causes List</a></p>
+<ul class="simple">
+<li><a class="reference internal" href="#is-it-possible-to-add-another-selection-in-the-primary-cause-under-equipment">Is it possible to add another selection in the Primary Cause under Equipment?</a></li>
+<li><a class="reference internal" href="#i-have-an-event-where-structures-did-not-get-power-back-yet-i-have-left-these-outages-in-progress-how-should-i-update-these-outages">I have an event where structures did not get power back yet. I have left these outages in progress. How should I update these outages?</a></li>
+</ul>
+<p><a class="reference internal" href="#grouping-outages-into-events">Grouping Outages into Events</a></p>
+<ul class="simple">
+<li><a class="reference internal" href="#i-missed-2-of-the-outages-when-i-was-grouping-28-outages-for-a-major-event-how-can-i-join-the-2-missed-outages-with-the-rest">I missed 2 of the outages when I was grouping 28 outages for a major event. How can I join the 2 missed outages with the rest?</a></li>
+<li><a class="reference internal" href="#is-there-a-way-to-accurately-enter-an-outage-which-was-taken-out-for-varying-amounts-of-time-and-affected-varying-amounts-of-customers">Is there a way to accurately enter an outage, which was taken out for varying amounts of time and affected varying amounts of customers?</a></li>
+</ul>
+<p><a class="reference internal" href="#how-to-calculate-indices-used-in-ert">How to Calculate Indices used in eRT</a></p>
+<ul class="simple">
+<li><a class="reference internal" href="#how-do-i-calculate-saidi-saifi-caidi-etc">How do I calculate SAIDI, SAIFI, CAIDI, etc.?</a></li>
+</ul>
+<p><a class="reference internal" href="#importing-data">Importing Data</a></p>
+<ul class="simple">
+<li><a class="reference internal" href="#what-is-the-basic-information-you-need-to-import-data">What is the basic information you need to import data?</a></li>
+<li><a class="reference internal" href="#can-my-existing-data-be-easily-transferred-from-the-appa-spreadsheet-to-the-web-based-system">Can my existing data be easily transferred from the APPA spreadsheet to the web based system?</a></li>
+</ul>
+<p><a class="reference internal" href="#mail-merge-change-total-customers-field">Mail Merge - Change Total Customers Field</a></p>
+<p><a href="#id5"><span class="problematic" id="id6">`National Benchmarking`_</span></a></p>
+<p><a href="#id7"><span class="problematic" id="id8">`Old Spreadsheet Questions`_</span></a></p>
+<p><a href="#id9"><span class="problematic" id="id10">`Reporting Frequency`_</span></a></p>
+<p><a href="#id11"><span class="problematic" id="id12">`Run SAIFI short versus SAIFI long`_</span></a></p>
+<p><a href="#id13"><span class="problematic" id="id14">`Transmission Related Outages`_</span></a></p>
+<p><a href="#id15"><span class="problematic" id="id16">`API and Advanced Import Spreadsheet`_</span></a></p>
+<p><a href="#id17"><span class="problematic" id="id18">`Events where No Restoration is Possible`_</span></a></p>
+<p><a href="#id19"><span class="problematic" id="id20">`How the System Treats Zero Duration Outages`_</span></a></p>
+<p><a class="reference internal" href="#general-information-on-ert">General Information on eRT</a></p>
+<ul class="simple">
+<li><a class="reference internal" href="#can-i-have-more-information-on-the-ereliability-tracker-and-its-features-and-capabilities">Can I have more information on the eReliability Tracker and its features and capabilities?</a></li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This FAQ is subject to change.</p>
+</div>
+<div class="section" id="acquiring-eia-data">
+<h2>Acquiring EIA Data<a class="headerlink" href="#acquiring-eia-data" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="how-do-i-get-the-correct-eia-data">
+<h3>How do I get the correct EIA Data?<a class="headerlink" href="#how-do-i-get-the-correct-eia-data" title="Permalink to this headline">¶</a></h3>
+<p>The eReliability Tracker can produce data for the revised EIA 861 form. Unfortunately, the feature to remove the &#8220;loss of supply&#8221; cause
+is not yet implemented, so eRT users currently need to use the &#8220;Schedule 3C-SAIDI and SAIFI calculated by other methods&#8221; instead of the
+&#8220;Schedule 3B-SAIDI and SAIFI in accordance with IEEE 1366-2003 standard or IEEE 1366-2012 standard&#8221; sheet. The numbers in eRT are
+calculated using the IEEE 1366 methods, but there&#8217;s a mistake in the EIA&#8217;s form that puts that &#8220;loss of supply&#8221; value under that category.</p>
+<p>Major Event Days (MED) can&#8217;t be excluded without a system outage history. In order to have a suitable statistical definition of a MED a
+system needs to have enough of an outage history built up. This means the prior years (before the analysis year) must have enough outages
+entered to set the statistical MED threshold (over the last 5 years there must have been at least 36 outages), so more outage data is
+needed from prior years to successfully calculate MED&#8217;s.</p>
+<p>Once the past data has been entered, the IEEE report should be filtered like so:</p>
+<img alt="_images/correct_EIA.jpg" src="_images/correct_EIA.jpg" />
+</div>
+<div class="section" id="what-are-the-steps-sent-to-list-for-acquiring-eia-data">
+<h3>What are the Steps Sent to List for Acquiring EIA Data?<a class="headerlink" href="#what-are-the-steps-sent-to-list-for-acquiring-eia-data" title="Permalink to this headline">¶</a></h3>
+<p>Since many will want to use the eReliability Tracker for generating the appropriate data for the EIA Form 861, here are some simple
+steps to calculate the required reliability indices in Schedule 3-Parts B and C of the form. This form requests your utility&#8217;s SAIDI and SAIFI
+value for the year, including <strong>and</strong> excluding Major Event Days (MEDs), in accordance with either IEEE 1366-2003 or IEEE 1366-2012 standards.</p>
+<p>To generate the appropriate 861 statistics, select &#8220;IEEE 1366 Statistics&#8221; under the reports tab, set the start/end dates, and enter 5 in the
+minimum outage duration field. The resulting indices for SAIDi and SAIFI are in accordance with IEEE 1366-2012 and can be used in your form.
+To calculate the required indices excluding major event days, select &#8220;Use IEEE Day Threshold&#8221; from the drop down menu in the filter labeled
+&#8220;Remove Major Events?&#8221; in addition to maintaining your previously set filters for date and minimum outage duration (as shown below). These
+steps should provide the necessary reliability indices for the EIA form.</p>
+<img alt="_images/filter_data.jpg" src="_images/filter_data.jpg" />
+<img alt="_images/ieee_results.jpg" src="_images/ieee_results.jpg" />
+</div>
+</div>
+<div class="section" id="adding-custom-variables-and-equipment">
+<h2>Adding Custom Variables and Equipment<a class="headerlink" href="#adding-custom-variables-and-equipment" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="how-do-i-add-custom-variables-and-equipment-to-my-outage-form">
+<h3>How do I add Custom Variables and Equipment to my Outage Form?<a class="headerlink" href="#how-do-i-add-custom-variables-and-equipment-to-my-outage-form" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><dl class="first docutils">
+<dt>First select to edit your equipment list (or customer variable list) from your utility profile page:</dt>
+<dd><img alt="_images/customVar1.jpg" class="first last" src="_images/customVar1.jpg" />
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Then, add the variables you need (i.e. distribution transformer number or lineman name in your scenario):</dt>
+<dd><img alt="_images/customVar2.jpg" class="first last" src="_images/customVar2.jpg" />
+</dd>
+</dl>
+</li>
+<li><p class="first">Lastly, when you or your lineman go into the tracker to enter an outage, you will notice that there is an Additional Details &amp; Custom
+Variable portion of the form:</p>
+<blockquote>
+<div><img alt="_images/customVar3.jpg" src="_images/customVar3.jpg" />
+</div></blockquote>
+<p>Here you will notice that the drop-down list for &#8220;Equipment&#8221; will populate with the variables you previously added in your equipment list. In
+your scenario, your lineman can select the drop-down menu, select &#8220;Distribution Transformer Number&#8221;, and enter the actual number in the notes field.
+Then the lineman can select the bottom option to &#8220;Add New Equipment Detail&#8221; to do the same thing for the other variables (i.e. lineman name, work
+order number, etc.).</p>
+<blockquote>
+<div><img alt="_images/customVar4.jpg" src="_images/customVar4.jpg" />
+</div></blockquote>
+<p>Then, you can use those variables in your outage form or in your spreadsheet to record these details per outage like below. This will ensure that
+your outages have these items recorded for when you export your data or just want to look at one outage in particular.</p>
+<blockquote>
+<div><img alt="_images/customVar5.jpg" src="_images/customVar5.jpg" />
+</div></blockquote>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="annual-report-clarifications">
+<h2>Annual Report Clarifications<a class="headerlink" href="#annual-report-clarifications" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="why-are-all-of-my-saidi-values-the-same-with-and-without-mes">
+<h3>Why are all of my SAIDI Values the same? (With and Without MEs)<a class="headerlink" href="#why-are-all-of-my-saidi-values-the-same-with-and-without-mes" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt><strong>Full Question:</strong></dt>
+<dd>In an annual report, the numbers in Table 2 for SAIDI for our utility were the same for with and without ME and the same as unscheduled and
+scheduled SAIDI number at 0. Can you tell me why? Are we missing some information in the outage data we sent?</dd>
+</dl>
+<p>You most likely were not missing any information. The reason why your SAIDI value including and excluding Major Event days is the same is because none of
+your outage events for the year are larger than the Major Event Threshold, which means that your utility did not experience any statistically defined
+major events. If you look at the SAIDI graph below, you can see that all of the outages are below the 7.757 threshold for 2014.</p>
+<img alt="_images/SAIDI.jpg" src="_images/SAIDI.jpg" />
+<p>Since you have no Scheduled outages recorded in the tracker for that year, the value will remain &#8216;0&#8217; for your scheduled SAIDI. The Unscheduled value will
+be the same as the previous two SAIDI values since all of the outages entered are unscheduled.</p>
+</div>
+<div class="section" id="what-does-med-and-los-stand-for">
+<h3>What does MED and LOS stand for?<a class="headerlink" href="#what-does-med-and-los-stand-for" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt><strong>MED</strong></dt>
+<dd>Major Event Days</dd>
+<dt><strong>LOS</strong></dt>
+<dd>Loss of Supply</dd>
+</dl>
+<p>EIA Form 861 requests utilities to submit their reliability data, SAIDI in particular, with and without major event days as well as with and without
+counting outages due to loss of supply from transmission.</p>
+</div>
+</div>
+<div class="section" id="appa-ieee-major-event-calculations">
+<h2>APPA IEEE Major Event Calculations<a class="headerlink" href="#appa-ieee-major-event-calculations" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="what-is-the-difference-in-ieee-and-appa-major-event-calculation">
+<h3>What is the Difference in IEEE and APPA Major Event Calculation?<a class="headerlink" href="#what-is-the-difference-in-ieee-and-appa-major-event-calculation" title="Permalink to this headline">¶</a></h3>
+<p>The IEEE threshold is calculated by looking at a utility&#8217;s history of outages to develop a baseline, which helps determine whether an outage is
+larger than approximately 99% of the typical outages for a utility. If the outage is larger, it is classified as a major event. That is to say that
+the threshold is set where there is approximately a 1% chance any given outage is going to be a Major Event based on the utility&#8217;s outage history.
+This does not mean that 1 out of 100 outages will be Major, just that each outage is going to be normal unless it&#8217;s unusually large compared to the
+typical outage magnitude.</p>
+<p>However, the <em>IEEE threshold</em> is based on SAIDI-days, where all of the outage events are grouped together by day, and those SAIDI-days that exceed
+the IEEE 2.5 beta threshold are then removed. You can see this happening when you run the IEEE Statistics or SAIDI reports in the tracker and toggle
+between removing the IEEE Major Events and not. The graph in the SAIDI report displays outage events, and after using this filter, any outage event that
+occurred on a day where the SAIDI-day calculation exceeds the IEEE 2.5 beta threshold is removed.</p>
+<p>Whereas, the <em>APPA Event Threshold</em> is calculated based on outages and removes those outages, not days, that exceed the IEEE 2.5 beta threshold as calculated
+based directly on outages. So the key difference is the use of days versus outages as the basis for determining and removing major events. One way isn&#8217;t
+necessarily the right way; rather, providing both methods for users to see the difference each method can make on the indices and decide what they
+like to use for themselves.</p>
+<p>To calculate the <em>IEEE 2.5 beta threshold</em>, one has to take the natural log of each SAIDI value in the data set, calculate the average of the logs
+(which is your alpha value), calculate the standard deviation for logs (which is your beta value), and then plug all known variables into this equation:</p>
+<img alt="_images/threshold_calc.jpg" src="_images/threshold_calc.jpg" />
+</div>
+<div class="section" id="how-do-i-classify-and-report-major-events">
+<h3>How do I classify and report Major Events?<a class="headerlink" href="#how-do-i-classify-and-report-major-events" title="Permalink to this headline">¶</a></h3>
+<p>Events in the system are not something that we can manually flag as &#8216;major&#8217;. The <em>IEEE Major Event threshold</em> calculated by looking at a utility&#8217;s
+history of outages to develop a baseline, which helps determine whether an outage is larger than approximately 99% of the typical outages for
+a utility. If the outage is larger than the threshold, the system will classify as a major event.</p>
+<p>Try and enter outages into the system, group them into one event, and run a report to see if the system determines the event as a major event
+based on the major event threshold calculated. You will see this in action when you run a report like the IEEE 1366 Statistics Report.
+If you select the filter (also shown below), to remove major events from the analysis, and hit &#8216;Generate Report&#8217;, the system will remove the major
+events from the analysis. In the table of the report, as shown below, you will see that the system was able to calculate a major event threshold
+for your utility based on your outage history.</p>
+<img alt="_images/ieee_filter.jpg" src="_images/ieee_filter.jpg" />
+<p>Please also note the difference between the <em>IEEE major event calculation</em> and the <em>APPA major event calculation</em>. The IEEE threshold is based on SAIDI-days,
+where all of the outage events are grouped together by day, and those SAIDI-days that exceed the IEEE 2.5 beta threshold are then removed.
+You can see this happening when you run the IEEE Statistics or SAIDI reports in the tracker and toggle between removing the IEEE Major Events and not.
+The graph in the SAIDI report displays outage events, and after using this filter, any outage event that occurred on a day where the SAIDI-day calculation
+exceeds the IEEE 2.5 beta threshold is removed.</p>
+<p>Whereas, the <em>APPA Event Threshold</em> is calculated based on outages and removes those outages, not days, that exceed the IEEE 2.5 beta threshold as calculated
+based directly on outages. So the key difference is the use of days versus outages as the basis for determining and removing major events.</p>
+</div>
+<div class="section" id="do-storms-e-g-hurricanes-tornadoes-etc-count-as-meds-do-generation-and-transmission-disturbances-count-as-los">
+<h3>Do storms (e.g. hurricanes, tornadoes, etc.) count as MEDs? Do Generation and Transmission disturbances count as LOS?<a class="headerlink" href="#do-storms-e-g-hurricanes-tornadoes-etc-count-as-meds-do-generation-and-transmission-disturbances-count-as-los" title="Permalink to this headline">¶</a></h3>
+<p>We cannot <em>subjectively decide</em> that a given event is &#8216;major&#8217;. IEEE standards indicate that to determine a major event, a major event threshold, or 2.5
+beta threshold, must be calculated by looking at a utility&#8217;s history of outages to develop a baseline, which then helps determine whether an outage is
+larger than approximately 99% of the typical outages for a utility. If the outage is larger than the threshold, the system will classify it as a major event.
+In many scenarios, major named storms like <strong>hurricanes and tornadoes may classify as a major event</strong>, but in IEEE standards, <strong>it must be statistically determined</strong>.</p>
+<p>Note that there are other methods used to determine MEDs out there. The EIA Form 861 requests participants to provide their data using the IEEE Method
+as well as any &#8216;Other Method&#8217;. For example, in the eReliability Tracker, we provide users with the ability to calculate major events in two ways: the IEEE method
+and the APPA method. The IEEE threshold is based on SAIDI-days, where all of the outage events are grouped together by day, and those SAIDI-days that
+exceed the IEEE 2.5 beta threshold are then removed. Whereas, the APPA Event Threshold is calculated based on outages and removes those outages,
+not days, that exceed the IEEE 2.5 beta threshold as calculated based directly on outages. So the key difference is the use of days versus outages as the basis
+for determining and removing major events.</p>
+<p>In the instructions for the EIA 861 form, an example of loss of supply is an outage event that was initiated from the high-voltage transmission system.</p>
+</div>
+<div class="section" id="previously-we-were-able-to-see-our-timed-threshold-saidi-value-has-something-changed">
+<h3>Previously we were able to see our Timed Threshold SAIDI Value&#8211;has something changed?<a class="headerlink" href="#previously-we-were-able-to-see-our-timed-threshold-saidi-value-has-something-changed" title="Permalink to this headline">¶</a></h3>
+<p>The IEEE major event threshold is calculated from <strong>at least 36 distinct days with outages</strong> that occurred <strong>within five years</strong> prior to the start of the requested
+report. For exmpale, if you were running an annual report for 2014 (1/1/14 - 12/31/14), the threshold would be calculated from 36 days with events that
+occurred between 01/01/2009 - 01/01/2014.</p>
+<p>The reason for why you see a threshold if you do not enter a start/end date for the report (as shown in the screenshot below) is because the
+<strong>start date is set as the current date</strong>, 4/20/15, and there are in fact more than 36 events within the five years prior to 4/20/2015.</p>
+<img alt="_images/ieee_stat.jpg" src="_images/ieee_stat.jpg" />
+</div>
+</div>
+<div class="section" id="calculate-duration-of-outages-in-exported-spreadsheet">
+<h2>Calculate Duration of Outages in Exported Spreadsheet<a class="headerlink" href="#calculate-duration-of-outages-in-exported-spreadsheet" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="what-is-the-equation-for-calculating-duration">
+<h3>What is the Equation for Calculating Duration?<a class="headerlink" href="#what-is-the-equation-for-calculating-duration" title="Permalink to this headline">¶</a></h3>
+<p>Currently the tracker&#8217;s reporting features do not have the ability to display or directly export the outage time per event yet. To calculate it yourself,
+once you export your outage data, insert a column after your start time and end time columns to calculate the total outage time (like shown in the image
+below). For that column, insert the formula: <strong>=((24*60)*(end-start))</strong>, where &#8220;end&#8221; is the cell location for end_datetime and &#8220;start&#8221; is the cell
+location for start_datetime. If you drag that equation down to the end, then it should calculate the outage time per each outage. Then you can sort
+that column to show you the top ten outages.</p>
+<img alt="_images/duration_calc.jpg" src="_images/duration_calc.jpg" />
+</div>
+</div>
+<div class="section" id="causes-list">
+<h2>Causes List<a class="headerlink" href="#causes-list" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="is-it-possible-to-add-another-selection-in-the-primary-cause-under-equipment">
+<h3>Is it possible to add another selection in the Primary Cause under Equipment?<a class="headerlink" href="#is-it-possible-to-add-another-selection-in-the-primary-cause-under-equipment" title="Permalink to this headline">¶</a></h3>
+<p>The equipment list was created in accordance with IEEE 1366 standards and is intended to provide a generic, yet detailed, variety of causes to allow all
+utilities to adequately represent their outage causes. If there is an area where we are inadequately representing a set of outages, we can discuss the
+possibility of including it in the survey to see if other users agree and see it as a necessary update (<a class="reference internal" href="Contact Us.html#contact-us"><span>Contact Us!</span></a>) However, it
+is important for us to maintain a structured set of causes due to the national benchmarking tool we are striving to provide. Please let us know if you
+have a follow up on this question.</p>
+</div>
+<div class="section" id="i-have-an-event-where-structures-did-not-get-power-back-yet-i-have-left-these-outages-in-progress-how-should-i-update-these-outages">
+<h3>I have an event where structures did not get power back yet. I have left these outages in progress. How should I update these outages?<a class="headerlink" href="#i-have-an-event-where-structures-did-not-get-power-back-yet-i-have-left-these-outages-in-progress-how-should-i-update-these-outages" title="Permalink to this headline">¶</a></h3>
+<p>This would be treated as a <strong>Scheduled Outage</strong> despite if it was caused by fire. Since the restoration was put off indefinitely, it is clear that
+there was a choice not to restore&#8211;which is similar to disconnect. And if you treat this like the case of a disconnect, where the customers are no longer
+part of the tracked system, typically a utility would put &#8216;0&#8217; for the number of customers out because those customers are no longer considered as a
+needing restoration. Therefore those outages will not count in your reliability statistics and will only remain in your records as a note.</p>
+</div>
+</div>
+<div class="section" id="grouping-outages-into-events">
+<h2>Grouping Outages into Events<a class="headerlink" href="#grouping-outages-into-events" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="i-missed-2-of-the-outages-when-i-was-grouping-28-outages-for-a-major-event-how-can-i-join-the-2-missed-outages-with-the-rest">
+<h3>I missed 2 of the outages when I was grouping 28 outages for a major event. How can I join the 2 missed outages with the rest?<a class="headerlink" href="#i-missed-2-of-the-outages-when-i-was-grouping-28-outages-for-a-major-event-how-can-i-join-the-2-missed-outages-with-the-rest" title="Permalink to this headline">¶</a></h3>
+<p>Go to your &#8220;Outages&#8221; tab, select the checkbox next to the all of the outages that are grouped in the event. To make this process easier, filter for
+the outages by address, substation, date, etc. and, if the 28 outages are properly filtered on the screen, use the &#8220;Bulk Actions&#8221; menu to select all
+of the visible outages (as shown below).</p>
+<img alt="_images/bulk.jpg" src="_images/bulk.jpg" />
+<p>Once you have selected the previously grouped outages, select the two newly entered outages. Now hit the &#8220;Bulk Actions&#8221; menu and select to group
+outages into a single event. When you do this, it should group the two outages tht are not in the event with, all of the rest. This should fix the
+problem.</p>
+</div>
+<div class="section" id="is-there-a-way-to-accurately-enter-an-outage-which-was-taken-out-for-varying-amounts-of-time-and-affected-varying-amounts-of-customers">
+<h3>Is there a way to accurately enter an outage, which was taken out for varying amounts of time and affected varying amounts of customers?<a class="headerlink" href="#is-there-a-way-to-accurately-enter-an-outage-which-was-taken-out-for-varying-amounts-of-time-and-affected-varying-amounts-of-customers" title="Permalink to this headline">¶</a></h3>
+<p>It is recommended to <strong>separate outages</strong> by circuit and <strong>then group the outages into a single event in the tracker</strong>. An example storm-related
+event that occurred on this utility&#8217;s &#8216;Central Substation&#8217; has been created below. The event has been broken out and recorded three separate outage
+entries (one for each circuit that was affected) and then grouped them into one event. In addtion, the &#8216;Single-Cuase Event&#8217; was selected to make
+sure the cause analysis only sees this as 1 storm-related outage, rather than 3.</p>
+<img alt="_images/storm_ex.jpg" src="_images/storm_ex.jpg" />
+<p>For a step-by-step look at how to enter this appropriately, take a look at this <a class="reference external" href="https://www.youtube.com/watch?v=HVdYiZDjieE&amp;feature=youtu.be">training video</a>
+on recording events and partial restorations. you can also visit our <a class="reference external" href="https://www.youtube.com/user/eReliabilityTracker">eReliability Tracker Youtube channel</a> for
+additional resources.</p>
+</div>
+</div>
+<div class="section" id="how-to-calculate-indices-used-in-ert">
+<h2>How to Calculate Indices used in eRT<a class="headerlink" href="#how-to-calculate-indices-used-in-ert" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="how-do-i-calculate-saidi-saifi-caidi-etc">
+<h3>How do I calculate SAIDI, SAIFI, CAIDI, etc.?<a class="headerlink" href="#how-do-i-calculate-saidi-saifi-caidi-etc" title="Permalink to this headline">¶</a></h3>
+<p>We follow IEEE 1366-2012 standards for calculating reliability indices. Follow this link to access APPA&#8217;s
+<a class="reference external" href="https://www.publicpower.org/files/PDFs/2013DSReliabilityAndOperationsReport_FINAL.pdf">2013 Distribution System Reliability and Operations Survey Report</a>
+and <strong>see Appendix B on page 35</strong>, which goes into detail on the specific equations/methods for calculating indices. We are happy to answer any other
+questions not found in this FAQ page. Feel free to email <a class="reference external" href="mailto:reliability&#37;&#52;&#48;publicpower&#46;org">reliability<span>&#64;</span>publicpower<span>&#46;</span>org</a> for any reliability-related questions.</p>
+</div>
+</div>
+<div class="section" id="importing-data">
+<h2>Importing Data<a class="headerlink" href="#importing-data" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="what-is-the-basic-information-you-need-to-import-data">
+<h3>What is the basic information you need to import data?<a class="headerlink" href="#what-is-the-basic-information-you-need-to-import-data" title="Permalink to this headline">¶</a></h3>
+<p>The basic information we need in order to do some data analysis is shown below. If you have more information for each outage (i.e. substation/circuit,
+phases impacted, load interrupted, etc.), we are happy to accept.</p>
+<ul class="simple">
+<li>Address of Outage</li>
+<li>Scheduled/Unscheduled</li>
+<li>Primary Cause</li>
+<li>Start Date/Time (e.g. 12/17/2012 11:00)</li>
+<li>End Date/Time (e.g. 12/18/2012 1:30)</li>
+<li>Customers Out</li>
+<li>Total Customers Served</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Our causes in the tracker are a pre-determined list of causes, which are in accordance with IEEE 1366-2012 standards.</p>
+</div>
+<p>When importing outages, the <strong>field for cause MUST match up with one of the causes in the list</strong>; otherwise, the tracker will not accept data.</p>
+<div class="topic">
+<p class="topic-title first">Importing Data into the Tracker</p>
+<p>In case you would like to import your data directly into the tracker, we are more than happy to help walk you through the process. Once the data
+is in the system, we will be able to access it from back end to do our analysis. Plus, this will enable you to run some of our reports, including
+IEEE 1366 statistics analysis, top causes analysis, worst performing circuit, etc. Some instructions are included below to help you create
+a user profile and begin entering outages. In addition, feel free to peruse our
+<a class="reference external" href="https://www.youtube.com/user/eReliabilityTracker">eReliability Tracker Youtube videos</a>
+and <a class="reference external" href="http://www.publicpower.org/Programs/interiorsidebar.cfm?ItemNumber=40905&amp;navItemNumber=40900">webinars</a> to get a good feel of the system.</p>
+<p>First, <a class="reference external" href="https://reliability.publicpower.org/users/register/RVZoxRl7ux">follow this link to register</a> yourself as a leader in the system for your utility.
+Then, you may begin entering outage information either manually or in bulk. We have two import features in the tracker&#8211;simple and advanced&#8211;
+that allow the user to import a CSV spreadsheet with an unlimited amount of data. The advanced option, which allows for greater detail, requires
+the CSV spreadsheet to be formatted exactly like the example import spreadsheet.</p>
+<p>The simple spreadsheet requires the spreadsheet to include the columns below (of which you are only required to fill out the bolded columns):</p>
+<ul class="simple">
+<li><strong>Utility Name</strong></li>
+<li>S/U</li>
+<li><strong>Address</strong></li>
+<li><strong>Cause ID</strong></li>
+<li><strong>Start Time</strong></li>
+<li>End Time</li>
+<li><strong>Customers Out</strong></li>
+<li>Total Customers</li>
+</ul>
+</div>
+</div>
+<div class="section" id="can-my-existing-data-be-easily-transferred-from-the-appa-spreadsheet-to-the-web-based-system">
+<h3>Can my existing data be easily transferred from the APPA spreadsheet to the web based system?<a class="headerlink" href="#can-my-existing-data-be-easily-transferred-from-the-appa-spreadsheet-to-the-web-based-system" title="Permalink to this headline">¶</a></h3>
+<p><strong>Yes!</strong> If you follow this link to our <a class="reference external" href="https://www.youtube.com/user/eReliabilityTracker">eReliability Tracker Youtube channel</a>, there is a
+video tutorial on importing data that shows you one of two options for importing data. The video shows the simple import process when transferring from
+the old spreadsheet to the eReliability Tracker.</p>
+<p>Another option is to use our advanced import feature, which allows the user to bulk upload a much larger set of information into the tracker from a
+CSV spreadsheet of data. This includes restoration notes, circuit type, phases impacted, etc.</p>
+</div>
+</div>
+<div class="section" id="mail-merge-change-total-customers-field">
+<h2>Mail Merge - Change Total Customers Field<a class="headerlink" href="#mail-merge-change-total-customers-field" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="how-does-the-total-customers-feature-work-exactly">
+<h3>How does the Total Customers Feature work exactly?<a class="headerlink" href="#how-does-the-total-customers-feature-work-exactly" title="Permalink to this headline">¶</a></h3>
+<p>To clarify, the <em>Total Customers Served</em> field in the outage form should be reflective of the <em>total number of customers served by your utility at the
+time of the reported outage</em>, <strong>NOT</strong> the number of customers interrupted during the outage. The issue appears to be with how the <em>total customers</em> value
+was entered on the outage entry form (please see example below) or when bulk importing data.</p>
+<p>When entering an outage, this field is auto-populated with the total number of customers your utility serves, which is based on what is entered in your
+utility information under the &#8216;Manage&#8217; tab. If you need to make edits to this number, go to the &#8216;Manage&#8217; tab to do so.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If you are importing data, the column containing this data is now called <strong>total_customers_served</strong> (Column Q).</p>
+</div>
+<p>In addition, we have changed the key accounts column (Column R) - previously titled <strong>customers_impacted</strong> to <strong>key_accounts_impacted</strong>.</p>
+<img alt="_images/outage_test.jpg" src="_images/outage_test.jpg" />
+<p>If this appears to be the problem on many outages for your utility, the best way to remedy this would be to export your current data, update the <strong>Total
+Customers Served</strong> or <strong>Total Customers</strong> field, delete everything currently in eRT, and then import the revised data.</p>
+<p>Below are steps outlining how to remove what&#8217;s currently in eRT and replacing it with a new bulk set of data.</p>
+<p>To correct the information:</p>
+<ol class="arabic simple">
+<li>Login to the <a class="reference external" href="http://reliability.publicpower.org/">eReliability Tracker</a></li>
+<li>Go to the <strong>Outages</strong> tab</li>
+<li><strong>Select the first outage</strong> identified above by using the &#8220;search&#8221; field</li>
+<li>On the outage form, under <strong>Miscellaneous Details - Total Customers</strong> verify that the <strong>Total Customers field is equivalent to the total number
+of customers served by the utility at the time of that outage</strong> (<strong>NOT</strong> the number of customers impacted by the outage)</li>
+<li>Scroll to the bottom and <strong>click Update Outage</strong></li>
+<li><strong>Repeat the process</strong> for each reported outage identified above</li>
+</ol>
+<p>To delete a set of outages and re-import via spreadsheet:</p>
+<ol class="arabic simple">
+<li><strong>Login</strong> to the <a class="reference external" href="http://reliability.publicpower.org/">eReliability Tracker</a></li>
+<li>Go to the <strong>Outages</strong> tab</li>
+<li><strong>Select all of the outages</strong> you wish to delete</li>
+<li>Select the &#8220;Bulk Actions Menu&#8221; and <strong>select to delete all checked outages</strong></li>
+<li>Once the erroneous outages have been removed, <strong>use the import feature to re-upload your data into the tracker</strong></li>
+</ol>
+</div>
+</div>
+<div class="section" id="general-information-on-ert">
+<h2>General Information on eRT<a class="headerlink" href="#general-information-on-ert" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="can-i-have-more-information-on-the-ereliability-tracker-and-its-features-and-capabilities">
+<h3>Can I have more information on the eReliability Tracker and its features and capabilities?<a class="headerlink" href="#can-i-have-more-information-on-the-ereliability-tracker-and-its-features-and-capabilities" title="Permalink to this headline">¶</a></h3>
+<p><strong>Yes!</strong> We are happy to provide any information necessary about its features and capabilities. Below are some basic descriptions of the features and
+additional training tools that may help guide you through the application. If you would like to speak over the phone to discuss your utility&#8217;s specific
+needs in an outage tracking and reporting service, we would be happy to set up a call once you <a class="reference internal" href="Contact Us.html#contact-us"><span>Contact Us!</span></a></p>
+<p>If you would like to see a brief tour of how the system works, please feel free to watch our <a class="reference external" href="https://www.youtube.com/user/eReliabilityTracker">eReliability Tracker Youtube videos</a>
+and <a class="reference external" href="http://www.publicpower.org/Programs/interiorsidebar.cfm?ItemNumber=40905&amp;navItemNumber=40900">webinars</a>. If you are more hands-on and would like
+to do a quick trial to play with the system yourself, let us know and we can set that up for you. We recommend watching the webinars and/or doing a trial run
+since that would give you a good feel for the system and allow you to see all of the reporting features, including the <em>IEEE Statistics Report</em>, <em>Circuit Ranking Report</em>,
+and <em>Causes Pie Chart</em>.</p>
+<p>The eReliability Tracker provides a number of advanced outage tracking features and should not be impacted by operating system related upgrades.
+It allows for multiple simultaneous users and additional outage information collection. To prevent utilities from losing any of the information they
+entered in the old Reliability Tracker spreadsheet, there is also an upload feature to carry data over from pas Reliability Tracker spreadsheets.</p>
+<div class="topic">
+<p class="topic-title first">eReliability Tracker</p>
+<p>Released in November 2012, APPA&#8217;s ground-breaking eReliability Tracker web-based software provided public power utilities with a simple way
+to collect, categorize, and summarize their outage information.</p>
+<p><strong>eReliability Tracker 2.0</strong> builds on its predecessor&#8217;s success by introducing a number of new features that increase functionality and
+ease-of-use:</p>
+<ul class="simple">
+<li>Enhanced data upload and import</li>
+<li>Utility customer information stored on outage form for editing on an outage-by-outage basis</li>
+<li>Improved response time for report queries</li>
+<li>Dynamic linking of substations and circuits throughout the system</li>
+<li>Monthly reports with historical outage statistics</li>
+<li>Circuit and substation naming</li>
+<li>Simultaneous multiple users (unlimited number of users per utility subscription)</li>
+<li>Mobile phone support</li>
+<li>Multiyear collection and data categorization</li>
+<li>Advanced outage and equipment tracking</li>
+<li>Joint Action Agency-level management</li>
+</ul>
+<p>Subscribers to eReliability Tracker 2.0 also receive an <strong>annual national reliability report</strong> based on the software data and earn points
+toward the <strong>Reliable Public Power Provider (RP3)</strong> designation.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="Contact Us.html" title="Contact Us!"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="Tutorials.html" title="Tutorials"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="Master.html">User Manuals 0.0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2015, APPA.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
+    </div>
+  </body>
+</html>

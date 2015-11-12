@@ -1,0 +1,31 @@
+swagger: "2.0"
+info:
+  version: 0.0.1
+  title: E-Reliability Tracker API
+host: http://www.example.com
+basePath: /api
+schemes:
+  - http
+consumes:
+  - application/vnd.json+api
+produces:
+  - application/vnd.json+api
+paths:
+  /events:
+    post:
+      summary: Create an event
+      responses:
+        201:
+          description: Successfully created event
+  /outages:
+    post:
+      summary: Create an outage
+      responses:
+        201:
+          description: Successfully created outage
+
+# definitions:
+  # Event:
+    # TODO
+  # Outage:
+    # TODO

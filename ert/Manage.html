@@ -1,0 +1,165 @@
+
+
+<!doctype html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Manage &mdash; User Manuals 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/bizstyle.js"></script>
+    <link rel="top" title="User Manuals 0.0.1 documentation" href="Master.html" />
+    <link rel="next" title="Report" href="Report.html" />
+    <link rel="prev" title="Functions" href="Functions.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="Report.html" title="Report"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="Functions.html" title="Functions"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="Master.html">User Manuals 0.0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><a href="/api/api.html">API Documentation</h1>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="manage">
+<span id="manage-label"></span><h1><strong>Manage</strong><a class="headerlink" href="#manage" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference internal" href="#utilities">Utilities</a></p>
+<p><a class="reference internal" href="#users">Users</a></p>
+<p>When you click &#8220;Manage&#8221; two options will appear underneath the tabs (shown in the image above).</p>
+<div class="section" id="utilities">
+<h2>Utilities<a class="headerlink" href="#utilities" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/manage_page.jpg" src="_images/manage_page.jpg" />
+<p>If you click on &#8220;Utilities&#8221; a list of all your utilities will be displayed.
+This page shows the name of each utility and whether it is active.
+By clicking on one of the utilities, you may edit the name, address, or number of customers for that utility.
+Editing the number of customers is important because it is used for reports.</p>
+<p>On this page, you have the ability to search and/or delete utilities; however, you do not have the authorization to add new utilities.
+To delete, you have to click the boxes of those utilities that you would like to remove, click the &#8220;Bulk Action&#8221; drop down menu, and then choose &#8220;Delete Selected Utilities.&#8221;</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last"><strong>Do not delete your utility.</strong> Deletion is <em>permanent</em> and you will lose all of your data.**</p>
+</div>
+<img alt="_images/manage_utility.jpg" src="_images/manage_utility.jpg" />
+<p>When editing your utility, on the right-hand side of the screen you will see an option to edit your utility&#8217;s substations, customers and equipment.
+By clicking on one of these three options you can create a new substation, customer or equipment by then clicking on the respective &#8220;Create New&#8221; button on the top right-hand side of the new screen.
+Once you&#8217;ve added the necessary information click the blue Create Substation, Create Customer or Create Equipment button.</p>
+<p>Within the Substation screen you can add or edit your utility&#8217;s circuits.
+By clicking on the button on the top right-hand side of the screen where it says &#8220;Create New Circuit&#8221; you will be able to create a new circuit.
+If you already have a circuit entered in the system you are able to edit it by clicking the name of the circuit in the list of circuits.</p>
+<img alt="_images/manage_substation.jpg" src="_images/manage_substation.jpg" />
+<p>Through the Edit Customers screen you can add or edit your utility&#8217;s customers.
+These customers are often the key accounts that a utility wants to keep track of.
+By clicking on the button on the top right-hand side of the screen where it says Create New Customer you will be able to create a new customer.
+If you already have a customer entered in the system you are able to edit it by clicking the name of the customer.
+These customers are also referred to as your key accounts on the outage page.</p>
+<img alt="_images/edit_equip.jpg" src="_images/edit_equip.jpg" />
+<p>In the Edit Equipment screen you can either use the defaults listed or click the &#8220;Create New Equipment&#8221; button on the top right-hand side of your screen to name a new piece of equipment.
+If the new equipment does not fall under any of the categories already listed on the equipment screen, leave the Parent menu blank (&#8212;&#8211;) and enter the name of your equipment.
+If the new equipment is related to a piece of equipment already listed choose that similar equipment as the Parent when creating a new equipment record.</p>
+<img alt="_images/import_equip.jpg" src="_images/import_equip.jpg" />
+<p>You also have the ability to import a list of equipment your utility already uses by using the Import Equipment CSV button on the top right-hand side of your screen.
+Any files uploaded should have the same formatting as found in the image to the right</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Please note that there <strong>cannot be any headers</strong> in the spreadsheet you are trying to import.</p>
+</div>
+</div>
+<div class="section" id="users">
+<h2>Users<a class="headerlink" href="#users" title="Permalink to this headline">¶</a></h2>
+<p>If you click on the &#8220;Users&#8221; tab a list of all the users for your utilities will be displayed.
+The details that will be displayed for each user are their username, the utilities they are associated with, their role (permission level), whether they are active, and their last login time.</p>
+<img alt="_images/users_page.jpg" src="_images/users_page.jpg" />
+<p>On this page, you have the ability to search, delete, and/or add users.</p>
+<div class="section" id="delete-user">
+<h3>Delete User:<a class="headerlink" href="#delete-user" title="Permalink to this headline">¶</a></h3>
+<p>To delete users, you have to click the check boxes of those utilities that you would like to remove.
+Click the &#8220;Bulk Action&#8221; drop down menu, and then choose &#8220;Delete Selected Users.&#8221;</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Deleting a user is <strong>permanent</strong>.</p>
+</div>
+</div>
+<div class="section" id="add-user">
+<h3>Add User:<a class="headerlink" href="#add-user" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>To add users, you have to click the &#8220;Create New User&#8221; button on the top right of the table.
+The page will display two forms (shown below).
+If you wish to create the new user yourself, then fill out the form on the left and click &#8220;Create User&#8221; when you are done.</p>
+<img alt="_images/add_user.jpg" src="_images/add_user.jpg" />
+<p>The best method is to assign the new user to create his/her own account (their own username/password).
+To assign a new user, use the form on the right. Fill out the information required and then click &#8220;Create Registration.&#8221;
+Once clicked, a green text box should appear below the &#8220;Create Registration&#8221; button with a registration link.
+Send this link to the user that wishes to create an account.
+The new user should follow the link and fill out the required information to create an account.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="Report.html" title="Report"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="Functions.html" title="Functions"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="Master.html">User Manuals 0.0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2015, APPA.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,141 @@
+**Report**
+==========
+
+`Running Reports`_
+	
+- `Report Filters`_
+
+- `Generating Report Results`_
+
+- `NEW Features`_
+
+`Troubleshooting`_
+
+|
+.. image:: images/report_page.jpg
+
+Reports are used to display data visually.  
+Reports can be essential to discovering problem areas and identifying the most severe outages.
+
+
+**IEEE 1366 Statistics**
+ This report will provide you with: ASAI, CAIDI, SAIDI, SAIFI
+
+**SAIDI**
+ This report will provide you with your SAIDI and graph your results
+
+**CAIDI**
+ This report will provide you with your CAIDI and  graph of your results
+
+**SAIFI**
+ This report will provide you with your SAIFI and  graph of your results
+
+**Outage Causes (Coming Soon)**
+ This report will provide you with a list of outages based on if they are scheduled/unscheduled and their cause
+
+**Circuit Ranking**
+ This report will list your:
+ 
+ * Top 10 Circuits Ranked by Customer Minutes of Duration
+ 
+ * Top 10 Circuits Ranked by Customer Interruptions
+
+**Cause Pie Chart**
+ This report will produce a pie chart of your outages grouped by outage cause or outage duration (in minutes).
+ 
+ .. image:: images/pie_chart.jpg
+
+
+Running Reports
+###############
+
+For each type of report listed at the top of your screen, also seen to the right, you can view your utility's reliability statistics.  
+Click which type of report you wish to run.  
+
+.. image:: images/running_report.jpg
+
+Each type of report form can be filled by basic information such as the date range you want a report from and/or 
+which substation you want a report for. Once you tailor the information you want to review 
+you have three options to view the data, print, download the report to a CSV file or generate the report directly on your screen. 
+
+
+Report Filters
+****************************
+
+**Start Date**
+ dd/mm/yyyy
+
+**End Date**
+ dd/mm/yyyy
+
+**Remove Major Events**
+ *APPA Event Threshold*
+  This threshold is calculated based on outages and removes outages that exceed 
+  the IEEE 2.5 beta threshold as calculated based directly on outages.
+
+ *IEEE Day Threshold*
+  This threshold is based on SAIDI-days (all of the outage events grouped together 
+  by day) and removes SAIDI-days where the IEEE 2.5 beta threshold is exceeded. 
+  The graph displays outage events, and after using this filter any outage event that 
+  occurred starting/occurring on a day where the SAIDI-day calculation exceeds the IEEE 2.5 beta threshold is removed.
+
+**Top Level Cause**
+ Scheduled v. Unscheduled
+
+**Minimum Event Duration (in minutes)**
+ Provide the minimum number of minutes
+
+**Maximum Event Duration (in minutes)**
+ Provide the maximum number of minutes
+
+**Substation**
+ Filter based on the substations that you added to your utility profile
+
+**Circuit**
+ Filter based on the circuits that you added to your utility profile
+
+**Report on Outage** *(Cause Pie Chart Only)*
+ This report will produce a pie chart of your outages grouped by outage cause or outage 
+
+
+Generating Report Results
+**************************************************
+
+For each type of report, after pressing the "\Generate Report" button, a report will show up based on the information 
+that you put in to the previous screen. You can run an infinite number of reports. 
+
+.. image:: images/saifi_results.jpg
+
+This form is used to access reports for SAIDI, CAIFI, SAIFI, Outage Causes, Circuit Ranking, and Cause Pie Chart. 
+All reports are accessed the same way by imputing basic information about the report.
+
+The best method is to assign the new user to create his/her own account (their own username/password).  
+To assign a new user use the form on the right. 
+Fill out the information required and then click "\Create Registration." 
+Once clicked, a green text box should appear below the "\Create Registration" button with a registration link. 
+Send this link to the user that wishes to create an account. 
+The new user should follow the link and fill out the required information to create an account.
+
+
+NEW Features
+************
+
+**NEW!** Feature to filter transmission-related outages
+
+
+To help with removing transmission related outages and/or outages due to the loss of
+generating units, we were able to add a filter to the eReliability Tracker's reporting features (image below)
+to allow the user to exclude those outages from their analysis.
+
+Simply select on option or the other as shown in the image below to remove those outages from the analysis.
+To remove both transmission and generation related outages, press Ctrl and click on both options. Once both
+are highlighted, hit 'Generate Report' to run the analysis excluding those outages.
+
+.. image:: images/new_feature.jpg
+
+
+
+Troubleshooting
+###############
+
+If you have any troubles understanding this software, find a bug in the system, or for general eReliability Tracker questions, please contact reliability@PublicPower.org. 

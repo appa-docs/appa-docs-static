@@ -1,0 +1,389 @@
+
+
+<!doctype html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Functions &mdash; User Manuals 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/bizstyle.js"></script>
+    <link rel="top" title="User Manuals 0.0.1 documentation" href="Master.html" />
+    <link rel="next" title="Manage" href="Manage.html" />
+    <link rel="prev" title="Introduction" href="Introduction.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="Manage.html" title="Manage"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="Introduction.html" title="Introduction"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="Master.html">User Manuals 0.0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><a href="/api/api.html">API Documentation</h1>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="functions">
+<h1><strong>Functions</strong><a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference internal" href="#home">Home</a></p>
+<p><a class="reference internal" href="#outages-tab">Outages Tab</a></p>
+<ul>
+<li><p class="first"><a class="reference internal" href="#record-outages">Record Outages</a></p>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference internal" href="#required-fields">Required Fields</a></li>
+<li><a class="reference internal" href="#system-characteristics">System Characteristics</a></li>
+<li><a class="reference internal" href="#miscellaneous-details">Miscellaneous Details</a></li>
+<li><a class="reference internal" href="#work-details">Work Details</a></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first"><a class="reference internal" href="#outages">Outages</a></p>
+</li>
+<li><p class="first"><a class="reference internal" href="#events">Events</a></p>
+</li>
+<li><p class="first"><a class="reference internal" href="#export">Export</a></p>
+</li>
+<li><p class="first"><a class="reference internal" href="#import">Import</a></p>
+</li>
+</ul>
+<div class="section" id="home">
+<h2>Home<a class="headerlink" href="#home" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/home.jpg" src="_images/home.jpg" />
+<p>At the top of the screen, there should be four tabs, &#8220;Home,&#8221; &#8220;Outages,&#8221; &#8220;Report,&#8221; and &#8220;Manage.&#8221;
+If you click &#8220;Home,&#8221; then it will bring you back to the welcome screen that you started on.</p>
+</div>
+<div class="section" id="outages-tab">
+<h2>Outages Tab<a class="headerlink" href="#outages-tab" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/outages_tab.jpg" src="_images/outages_tab.jpg" />
+<p>If you click &#8220;Outages,&#8221; five options will appear underneath the tabs (shown in the image above).</p>
+<dl class="docutils">
+<dt><strong>Record Outage</strong></dt>
+<dd>Enter a new outage</dd>
+<dt><strong>Outages</strong></dt>
+<dd>View all recorded outages</dd>
+<dt><strong>Events</strong></dt>
+<dd>Lists all events (each outage is automatically entered as a single event,
+but outages can be combined to form one event for partial restorations or related outages)</dd>
+<dt><strong>Export</strong></dt>
+<dd>Export all outages from a specific time period</dd>
+<dt><strong>Import</strong></dt>
+<dd>Import previously recorded events from a CSV file. Supports the old Reliability
+Tracker 6.2 and the new advanced feature.</dd>
+</dl>
+<div class="section" id="record-outages">
+<h3>Record Outages<a class="headerlink" href="#record-outages" title="Permalink to this headline">¶</a></h3>
+<p>If you wish to record an outage, click on &#8220;Record Outage&#8221; and then fill out all of the required information on the form.
+The top portion of the page is required and the bottom portion contains fields for additional details that you can add for your own convenience.</p>
+</div>
+<div class="section" id="required-fields">
+<h3>Required Fields<a class="headerlink" href="#required-fields" title="Permalink to this headline">¶</a></h3>
+<p>Fields required in order to submit a report:</p>
+<dl class="docutils">
+<dt><strong>Address</strong></dt>
+<dd><p class="first">This field requires the address of the customer associated with the outage being reported.</p>
+<p class="last">Ex: 1875 Connecticut Ave.</p>
+</dd>
+<dt><strong>Substation</strong></dt>
+<dd><p class="first">Substations perform as parts of a generation, transmission, and distribution system.  It is an electric system facility.</p>
+<p>In the drop down menu, select the specific substation where the outage occurred.</p>
+<p class="last">Utilities can use their own naming conventions when naming their substations (more thoroughly described in the <a class="reference internal" href="Manage.html#manage-label"><span>Manage</span></a> section of this manual).</p>
+</dd>
+<dt><strong>Circuit</strong></dt>
+<dd><p class="first">Also called feeders, circuits carry power to load areas from substations.
+A substation is comprised of a number of incoming and outgoing circuits connected to a bus-bar system.
+In addition to noting the substation, it is important to note which circuit in the specified substation was relevant to the outage.</p>
+<p>In the drop down menu, select the circuit on which the outage occurred.</p>
+<p class="last">Utilities can use their own naming conventions when naming their circuits (more thoroughly described in the <a class="reference internal" href="Manage.html#manage-label"><span>Manage</span></a> section of this manual).
+Circuits are not automatically related to substations so be sure to use a good naming convention and select the proper circuit.</p>
+</dd>
+<dt><strong>Primary Cause</strong></dt>
+<dd><p class="first">In this field, there is a drop down menu with all of the causes of service interruption.
+It is important to fill out the correct primary cause so that you can analyze the reasons for the outages in your utility and take preventative measures for the future.
+It is also important to select the most exact cause of the outage.  For example, if there is a storm and the wind blows a tree onto a line causing an outage, the tree should be selected as the cause of the outage.</p>
+<p class="last">Every service provider may categorize causes differently, but as long as you stay consistent with your own method of categorizing them, you will be able to analyze the causes of your utility&#8217;s outages in the future.
+This cause list follows IEEE recommendations.
+In situations where the cause of the outage is unknown, the utility should do its best to develop substantial conclusions about the most likely cause based on analysis of similar past interruption events.</p>
+</dd>
+</dl>
+<p><strong>Primary Cause: Scheduled</strong></p>
+<blockquote>
+<div><p>This category includes interruptions that can safely be delayed by the utility personnel and customers can be notified in advance.</p>
+<img alt="images/primaryCauseS.jpg" src="images/primaryCauseS.jpg" />
+</div></blockquote>
+<p><strong>Primary Cause: Unscheduled</strong></p>
+<blockquote>
+<div><p>This category includes any interruption that is a result of the actions of the public.</p>
+<img alt="images/primaryCauseU.jpg" src="images/primaryCauseU.jpg" />
+</div></blockquote>
+<p><strong>Number of Customers Without Power</strong></p>
+<blockquote>
+<div><p>Specify, for the utility being addressed, how many customers were without power during the outage being reported.
+Enter the value in numerical format.</p>
+<p>Ex: 158</p>
+</div></blockquote>
+<p><strong>Time Outage Began</strong></p>
+<blockquote>
+<div><p>Identify the most accurate time for when the outage began in military time.</p>
+<p>Ex: 18:00</p>
+</div></blockquote>
+<p><strong>Date Outage Began</strong></p>
+<blockquote>
+<div><p>Indicate the specific date when the outage began.</p>
+<p>The format should be: mm/dd/yyyy or you can click on the calendar icon to select the date.</p>
+<p>Ex: 02/16/2012</p>
+</div></blockquote>
+<p><strong>Is Partial Restoration?</strong></p>
+<blockquote>
+<div><p>Partial restoration is a way to note that this recorded outage is one of several related to a single restoration event.</p>
+<p>In the old eReliability Tracker, users had the option to checkmark a box to mark an outage as partially restored.
+If users wish to search and filter for these old outages, they may find them by clicking and editing an outage and scrolling down to find this work detail:</p>
+<img alt="images/old_partial_rest.jpg" src="images/old_partial_rest.jpg" />
+<p><strong>Now</strong>, users can navigate to the &#8220;&#8221;Events&#8221; tab, select an outage, and mark it as Yes or No in the <strong>Is Part of Restoration?</strong> column:</p>
+<img alt="images/is_partial_rest.jpg" src="images/is_partial_rest.jpg" />
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Clicking on the drop-down <strong>Bulk Actions</strong> button allows you to mark an outage as Yes or No.</p>
+</div>
+<p>Don&#8217;t forget to group partial restorations of outages together in the &#8220;Events&#8221; tab.</p>
+</div></blockquote>
+</div>
+<div class="section" id="system-characteristics">
+<h3>System Characteristics<a class="headerlink" href="#system-characteristics" title="Permalink to this headline">¶</a></h3>
+<p>Fields not required in order to submit a report (these are additional details that are recommended to be filled out)</p>
+<p><strong>Descriptive Characteristics</strong></p>
+<blockquote>
+<div><p>Describe the utility&#8217;s electrical distribution system.</p>
+<p>Options: Underground or Overhead</p>
+<p>Electrical distribution systems were traditionally overhead; however, now there are many systems that have been converted to an underground distribution system.
+Choose whether the utility the outage report is being made for is an underground or overhead electrical distribution system.</p>
+</div></blockquote>
+<p><strong>System Voltage at Site</strong></p>
+<blockquote>
+<div>The voltage information should be based on the highest voltage level affected by the outage event.</div></blockquote>
+<p><strong>Circuit Type</strong></p>
+<blockquote>
+<div><p>Choose the type of circuit that your utility system uses.</p>
+<p>Options include: <em>Radial</em>, <em>primary loop</em>, <em>primary selective</em>, <em>secondary selective</em>,  and <em>spot network</em></p>
+<ul>
+<li><dl class="first docutils">
+<dt>Radial</dt>
+<dd><p class="first last">This is the most common and simple distribution system.
+It can be completely overhead or underground.
+It is connected to only one source of power.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Primary loop</dt>
+<dd><p class="first last">Also known as open ring system. Provides power from two feeders.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Primary selective</dt>
+<dd><p class="first last">This type of circuit uses some of the same basic components as the primary loop.
+Ahead of the consumer&#8217;s transformer, an automatic switch is provided, which helps to limit interruptions in the event of loss of feeder.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Secondary selective</dt>
+<dd><p class="first last">This system uses two transformers from two different primary feeders.
+Unlike the primary selective system, it uses low voltage switching.
+This system is generally used for industrial plants.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Spot networks</dt>
+<dd><p class="first last">This system is very similar to a closed ring system.
+It is a network, which means that it utilizes two or more transformer units in parallel.
+It is most commonly used in high load density areas.</p>
+</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+<p><strong>Phases Impacted</strong></p>
+<blockquote>
+<div><p>A three-phase electric power system is a type of polyphase system.
+It is a common method of electric power transmission and tends to be a much smoother form of electricity than the single or two phase systems.</p>
+<p>Select in the drop down menu exactly which phases (which overhead line(s)) were affected by the outage.</p>
+<p>Options include any combination of phase 1, 2, and 3 ( A, B, and C).</p>
+</div></blockquote>
+<p><strong>Load Interrupted (in kVA)</strong></p>
+<blockquote>
+<div>This is the value, in kilovolt-amps, of connected load interruptions.</div></blockquote>
+</div>
+<div class="section" id="miscellaneous-details">
+<h3>Miscellaneous Details<a class="headerlink" href="#miscellaneous-details" title="Permalink to this headline">¶</a></h3>
+<p>Fields not required in order to submit a report (these are additional details that are recommended to be filled out).</p>
+<p><strong>Key Accounts Without Power</strong></p>
+<blockquote>
+<div>These are the key customers for which the utility wants to track service and reliability levels.
+These customers can be referenced when creating a new outage.
+Information on how these customers can be created can be found under the <a class="reference internal" href="Manage.html#manage-label"><span>Manage</span></a> section of this manual.</div></blockquote>
+<p><strong>How was the Outage Reported?</strong></p>
+<blockquote>
+<div>Options include: Customer call-in, Outage Management System, and Other</div></blockquote>
+<p><strong>Total Work Hours to Complete Restoration</strong></p>
+<blockquote>
+<div><p>Identify how many work hours it took to complete total restoration of the utility. Enter value in numerical format.</p>
+<p>Ex: 5.</p>
+</div></blockquote>
+<p><strong>Total Customers</strong></p>
+<blockquote>
+<div>Number of customers served by utility.</div></blockquote>
+</div>
+<div class="section" id="work-details">
+<h3>Work Details<a class="headerlink" href="#work-details" title="Permalink to this headline">¶</a></h3>
+<p><strong>Equipment Action</strong></p>
+<blockquote>
+<div>This identifies if the notes or equipment used relative to the outage are for restoration, repair, replacement, or a work detail.</div></blockquote>
+<p><strong>Equipment</strong></p>
+<blockquote>
+<div>This is the actual equipment used. The list is drawn from the equipment list created in the <a class="reference internal" href="Manage.html#manage-label"><span>Manage</span></a> section.</div></blockquote>
+<p><strong>Notes</strong></p>
+<blockquote>
+<div>This area is for notes related to the restoration, repair, replacement, or work details for an outage.</div></blockquote>
+</div>
+<div class="section" id="how-to-record-an-outage">
+<h3>How to Record an Outage<a class="headerlink" href="#how-to-record-an-outage" title="Permalink to this headline">¶</a></h3>
+<p>Once the required information and additional details are filled out, click &#8220;Create Outage&#8221; and you will be automatically taken to the list of outages that you have for your utility.
+If the addition was successful, there should be a green label at the top of the page that says it was successfully added.</p>
+<p>From that page, if you wish to record another outage,
+click on &#8220;Create New Outage&#8221; on the top right corner of the page, which will take you back to the form to record a new outage.</p>
+</div>
+<div class="section" id="outages">
+<h3>Outages<a class="headerlink" href="#outages" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<img alt="_images/outages.jpg" src="_images/outages.jpg" />
+<p>If you click on &#8220;Outages&#8221; sub tab you will be taken to the listing of recorded outages for your utility.
+From this page, you may click on &#8220;Create an Outage&#8221; to record another outage. You can also search, edit, or delete the recorded outages.</p>
+<p>When searching for an outage, all eight (8) fields you see listed across the screen will be searched as you type into the search box.
+For a more detailed report you will want to use the &#8220;Export&#8221; function to create a spreadsheet.</p>
+<p>On this &#8220;Outages&#8221; page, you have the ability to delete outages by placing checks next to the outages you would like to delete and then clicking on the &#8220;Bulk Action&#8221; drop down menu and selecting &#8220;Delete Selected Outages.&#8221;</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Once an outage is deleted it is <strong>permanently</strong> deleted from the system.</p>
+</div>
+<p>By clicking on any of the outages, you can edit the details that were recorded for them.
+This page displays the following details of the listed outages: address, utility, substation, circuit, customers out.</p>
+</div>
+<div class="section" id="events">
+<h3>Events<a class="headerlink" href="#events" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<img alt="_images/events.jpg" src="_images/events.jpg" />
+<p>If you click on &#8220;Events,&#8221; you will come across a page with a listing of all of the events that have been recorded for your utility.
+The details of each event shown on this page include: name, outages involved, and start date.
+An event is a collection of outages, typically partial restorations related to single outages.</p>
+<img alt="_images/events_page.jpg" src="_images/events_page.jpg" />
+<p>On this page, you have the ability to delete events by placing checks next to the events
+you would like to delete and then clicking on the &#8220;Bulk Action&#8221; drop down menu and selecting &#8220;Delete Selected Events.&#8221;</p>
+<p>By clicking on one of the events, you may edit the name of the event, edit any of the outages involved with the event, or sort the outages listed.
+This is a good way to group partial outages together to be treated as one event in the system.</p>
+<p>To sort the outages listed within an event, you have to click the boxes of those outages
+that you would like to move, and click the &#8220;Bulk Action&#8221; drop down menu, and then choose either
+&#8220;Separate Selected Outages into Unique Event&#8221; or &#8220;Delete Selected Outages.&#8221;</p>
+<p>Once you are done with any changes on this page, click &#8220;Update Event&#8221; and a green label
+should appear on the top of the screen that says the modification was successful.</p>
+</div>
+<div class="section" id="export">
+<h3>Export<a class="headerlink" href="#export" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<img alt="_images/export.jpg" src="_images/export.jpg" />
+<img alt="_images/export_page.jpg" src="_images/export_page.jpg" />
+<p>Only Leaders are able to view this button.
+When you click on &#8220;Export&#8221; you will see two boxes where you can input the date range of the outages you want reported.
+Once you&#8217;ve chosen your dates click the export button to see all your data in a spreadsheet format.
+You may want to export data to perform additional analysis.</p>
+</div>
+<div class="section" id="import">
+<h3>Import<a class="headerlink" href="#import" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<img alt="_images/import.jpg" src="_images/import.jpg" />
+<img alt="_images/import_page.jpg" src="_images/import_page.jpg" />
+<p>Use this function to upload any data you already have recorded into this eReliability software.
+The spreadsheet you upload should be arranged in the following way in CSV format:</p>
+<img alt="images/import_format.jpg" src="images/import_format.jpg" />
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">There <strong>cannot</strong> be any <strong>headers</strong> in the spreadsheet you are trying to import.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="Manage.html" title="Manage"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="Introduction.html" title="Introduction"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="Master.html">User Manuals 0.0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2015, APPA.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
+    </div>
+  </body>
+</html>
